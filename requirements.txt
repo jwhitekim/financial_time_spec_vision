@@ -1,0 +1,12 @@
+torch
+torchvision
+transformers
+PyWavelets
+scipy
+numpy
+pandas
+Pillow
+tqdm
+matplotlib
+requests
+yfinance
