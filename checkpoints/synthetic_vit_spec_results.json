@@ -1,0 +1,8 @@
+{
+  "dataset": "synthetic",
+  "name": "synthetic_vit_spec",
+  "test_mse": 0.005175,
+  "test_smape": 0.343055,
+  "test_sign_acc": 0.948992,
+  "test_sign_acc_threshold": 0.912209
+}

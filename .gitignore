@@ -1,0 +1,7 @@
+.vscode/
+
+data/raw/
+
+data/processed/
+
+checkpoints/*.pt

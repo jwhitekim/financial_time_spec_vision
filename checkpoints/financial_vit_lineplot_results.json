@@ -1,0 +1,8 @@
+{
+  "dataset": "financial",
+  "name": "financial_vit_lineplot",
+  "test_mse": 0.610617,
+  "test_smape": 0.148713,
+  "test_sign_acc": 0.527442,
+  "test_sign_acc_threshold": 0.606161
+}

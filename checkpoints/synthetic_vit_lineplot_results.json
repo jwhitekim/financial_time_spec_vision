@@ -1,0 +1,8 @@
+{
+  "dataset": "synthetic",
+  "name": "synthetic_vit_lineplot",
+  "test_mse": 0.012139,
+  "test_smape": 0.462117,
+  "test_sign_acc": 0.924557,
+  "test_sign_acc_threshold": 0.871918
+}

@@ -17,18 +17,18 @@ T	       100 (고정)	   시계열 길이
 import numpy as np
 
 def generate_synthetic_data(num_samples=150000, T=100, seed=42):
-  np.random.seed(seed)
+  rng = np.random.default_rng(seed)
   t = np.arange(1, T + 1)  # t = 1 to T
 
   # 파라미터 샘플링
-  A1 = np.random.normal(1, 0.5, size=(num_samples, 1))
-  A2 = np.random.normal(1, 0.5, size=(num_samples, 1))
-  B1 = np.random.uniform(-1/T, 1/T, size=(num_samples, 1))
-  B2 = np.random.uniform(-1/T, 1/T, size=(num_samples, 1))
-  T1 = np.random.normal(T/5, T/10, size=(num_samples, 1))
-  T2 = np.random.normal(T, T/2, size=(num_samples, 1))
-  phi1 = np.random.uniform(0, 2*np.pi, size=(num_samples, 1))
-  phi2 = np.random.uniform(0, 2*np.pi, size=(num_samples, 1))
+  A1 = rng.normal(1, 0.5, size=(num_samples, 1))
+  A2 = rng.normal(1, 0.5, size=(num_samples, 1))
+  B1 = rng.uniform(-1/T, 1/T, size=(num_samples, 1))
+  B2 = rng.uniform(-1/T, 1/T, size=(num_samples, 1))
+  T1 = rng.normal(T/5, T/10, size=(num_samples, 1))
+  T2 = rng.normal(T, T/2, size=(num_samples, 1))
+  phi1 = rng.uniform(0, 2*np.pi, size=(num_samples, 1))
+  phi2 = rng.uniform(0, 2*np.pi, size=(num_samples, 1))
 
   # 시계열 생성 (벡터화)
   s = (A1 + B1 * t) * np.sin(2 * np.pi * t / T1 + phi1) \
